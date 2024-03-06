@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dimgrey;
+}
+
+.onboarding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  height: 40%;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.onboarding__btn {
+  width: 60px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: blue;
+  color: aliceblue;
+}
+
+.onboarding__btn:hover {
+  background-color: lightskyblue;
+}
+
+.game-area {
+  display: none;
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  background-image: url('./assets/ghost_background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 8px solid gray;
+  border-radius: 10px;
+}
+
+.game-area__cube {
+  background-color: rgba(211, 211, 211, 0);
+  background-image: url('./assets/ghost.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
